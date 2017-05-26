@@ -136,7 +136,7 @@ bio.display = function() {
             $("#skills").append(formattedSkill);
         });
     }
-}
+};
 
 education.display = function() {
     education.schools.forEach(function(school) {
@@ -182,7 +182,7 @@ education.display = function() {
 
         $(".education-entry:last").append(formattedOnlineUrl);
     });
-}
+};
 
 work.display = function() {
     work.jobs.forEach(function(job) {
@@ -203,7 +203,7 @@ work.display = function() {
 
         $(".work-entry:last").append(formattedDescription);
     });
-}
+};
 
 projects.display = function() {
     projects.projects.forEach(function(project) {
