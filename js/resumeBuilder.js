@@ -206,29 +206,29 @@ work.display = function() {
 }
 
 projects.display = function() {
-    for(var project in projects.projects) {
+    projects.projects.forEach(function(project) {
         $("#projects").append(HTMLprojectStart);
 
-        var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
+        var formattedTitle = HTMLprojectTitle.replace("%data%", project.title);
 
         $(".project-entry:last").append(formattedTitle);
 
-        var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
+        var formattedDates = HTMLprojectDates.replace("%data%", project.dates);
 
         $(".project-entry:last").append(formattedDates);
 
-        var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
+        var formattedDescription = HTMLprojectDescription.replace("%data%", project.description);
 
         $(".project-entry:last").append(formattedDescription);
 
-        if(projects.projects[project].images.length > 0) {
-            for(var image in projects.projects[project].images) {
-                var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
+        if(project.images.length > 0) {
+            project.images.forEach(function(image) {
+                var formattedImage = HTMLprojectImage.replace("%data%", image);
 
                 $(".project-entry:last").append(formattedImage);
-            }
+            });
         }
-    }
+    });
 };
 
 bio.display();
