@@ -77,7 +77,7 @@ var work = {
 var projects = {
     "projects" : [
         {
-            "title" : "Sample Project 1",
+            "title" : "MultiUser Blog",
             "dates" : "2014",
             "description" : "Who moved my cheese???",
             "images" : [
