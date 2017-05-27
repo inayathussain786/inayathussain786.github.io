@@ -88,6 +88,9 @@ var projects = {
     ]
 };
 
+
+
+bio.display = function() {
 var formattedName = HTMLheaderName.replace("%data%",bio.name);
 
 var formattedRole = HTMLheaderRole.replace("%data%",bio.role);
@@ -115,8 +118,6 @@ var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 
 $("#topContacts").append(formattedLocation);
 $("#footerContacts").append(formattedLocation);
-
-bio.display = function() {
     if(bio.skills.length > 0) {
 
         var formattedbioPic = HTMLbioPic.replace("%data%", bio.biopic);
