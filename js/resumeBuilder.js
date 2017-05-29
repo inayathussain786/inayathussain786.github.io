@@ -91,33 +91,30 @@ var projects = {
 
 
 bio.display = function() {
-var formattedName = HTMLheaderName.replace("%data%",bio.name);
+    var formattedName = HTMLheaderName.replace("%data%",bio.name);
 
-var formattedRole = HTMLheaderRole.replace("%data%",bio.role);
+    var formattedRole = HTMLheaderRole.replace("%data%",bio.role);
 
-$("#header").prepend(formattedRole);
+    $("#header").prepend(formattedRole);
 
-$("#header").prepend(formattedName);
+    $("#header").prepend(formattedName);
 
-var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
+    var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
 
-$("#topContacts").append(formattedMobile);
-$("#footerContacts").append(formattedMobile);
+    $("#topContacts,#footerContacts").append(formattedMobile);
 
-var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+    var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
 
-$("#topContacts").append(formattedEmail);
-$("#footerContacts").append(formattedEmail);
+    $("#topContacts,#footerContacts").append(formattedEmail);
 
-var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+    var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
 
-$("#topContacts").append(formattedGithub);
-$("#footerContacts").append(formattedGithub);
+    $("#topContacts,#footerContacts").append(formattedGithub);
 
-var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+    var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 
-$("#topContacts").append(formattedLocation);
-$("#footerContacts").append(formattedLocation);
+    $("#topContacts,#footerContacts").append(formattedLocation);
+    
     if(bio.skills.length > 0) {
 
         var formattedbioPic = HTMLbioPic.replace("%data%", bio.biopic);
