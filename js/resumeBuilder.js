@@ -2,13 +2,13 @@ var bio = {
     "name" : "Syed Inayat Hussain",
     "role" : "Full Stack Web Developer",
     "contacts" : {
-        "mobile" : "919804568727",
+        "mobile" : "+919804568727",
         "email" : "sih.25011993@gmail.com",
         "github" : "https://github.com/inayathussain786",
         "location" : "India"
     },
     "welcomeMessage" : "Learning and Applying",
-    "skills" : ["HTML","CSS","JavaScript","JQuery","Python","Bootstrap"],
+    "skills" : ["HTML","CSS","JavaScript","JQuery","Python","Bootstrap","Google App Engine","Google APIs"],
     "biopic" : "images/inu.jpg"
 };
 
