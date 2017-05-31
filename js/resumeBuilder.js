@@ -7,7 +7,7 @@ var bio = {
         "github" : "https://github.com/inayathussain786",
         "location" : "India"
     },
-    "welcomeMessage" : "Welcome to Udacity",
+    "welcomeMessage" : "Learning and Applying",
     "skills" : ["HTML","CSS","JavaScript","JQuery","Python","Bootstrap"],
     "biopic" : "images/inu.jpg"
 };
